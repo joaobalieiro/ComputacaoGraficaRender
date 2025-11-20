@@ -2,8 +2,8 @@ from OpenGL.GL import *
 from OpenGL.GLU import *
 from OpenGL.GLUT import *
 
-
 def draw_axes() -> None:
+    # Desativa iluminacao para desenhar eixos com cor fixa
     glDisable(GL_LIGHTING)
     glBegin(GL_LINES)
 
@@ -23,6 +23,7 @@ def draw_axes() -> None:
     glVertex3f(0.0, 0.0, 5.0)
 
     glEnd()
+    # Reativa iluminacao para o restante da cena
     glEnable(GL_LIGHTING)
 
 

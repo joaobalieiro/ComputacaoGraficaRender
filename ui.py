@@ -117,7 +117,7 @@ def _draw_text(x: float, y: float, text: str) -> None:
         GLUT.glutBitmapCharacter(GLUT.GLUT_BITMAP_HELVETICA_18, ord(ch))
 
 def hit_test(x: int, y: int, width: int, height: int) -> Tuple[Optional[str], Optional[str]]:
-    """Retorna ("object", id) ou ("shading", id) se clicou em algum botao."""
+    # Retorna ("object", id) ou ("shading", id) se clicou em algum botao
     # GLUT fornece y com origem no topo; nossa UI usa origem em baixo
     y_gl = height - y
 
